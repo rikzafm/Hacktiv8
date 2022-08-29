@@ -1,0 +1,21 @@
+.link{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: red;
+}
+
+.link:link{
+    color: blue;
+}
+
+.link:active{
+    color: green;
+}
+
+.link:visited{
+    background: pink;
+    color: magenta;
+}

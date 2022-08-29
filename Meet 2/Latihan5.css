@@ -1,0 +1,15 @@
+.leftText{
+    text-align: left;
+}
+
+.rightText{
+    text-align: right;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.justifyText{
+    text-align: justify;
+}

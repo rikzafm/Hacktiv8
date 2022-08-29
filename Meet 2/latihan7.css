@@ -1,0 +1,31 @@
+#line1{
+    border-style: solid;
+}
+
+#line2{
+    border-style: dotted;
+}
+
+#line3{
+    border-style: dashed;
+}
+
+#line4{
+    border-style: double;
+}
+
+#line5{
+    border-style: groove;
+}
+
+#line6{
+    border-style: inset;
+}
+
+#line7{
+    border-style: outset;
+}
+
+#line8{
+    border-style: ridge;
+}
