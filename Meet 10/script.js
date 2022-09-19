@@ -89,25 +89,63 @@ dateNow3();
 
 //Question 4
 
-const setOfNum = [2, 3, 20, 21];
+const setOfNum = [2, 'kjhkjkj', 20, 21];
 
-const oddEven = (number) => {
+const oddEven = (type, number) => {
     let even = [];
     let odd = [];
     for (i = 0; i < number.length; i++){
         if (typeof number[i] === "number"){
             let temp = number[i] % 2;
             
-            if (temp === 0){
-                even.push(temp);
+            if (temp === 0 && type === 'even'){
+                even.push(number[i]);
             } 
-            else {
-                odd.push(temp);
+            if (temp === 1 && type == 'odd') {
+                odd.push(number[i]);
             }
         }
         else{
             return console.log(`Input invalid. ${number[i]} is not a number`);
         }
     }
-    return even, odd;
+
+    if (type === 'even'){
+        return even;
+    } else {
+        return odd;
+    }
 }
+
+oddEven('even', setOfNum);
+
+//Extra Question
+const arrayNum = [2, 1, 23, 23, 3, 4, 10, 23];
+
+const biggest = (array) => {
+    if (array.length === 0) {
+        return console.log('Array is Empty');
+    } 
+
+    let sorted = array.sort(function(a, b) {
+        if( a === Infinity ) 
+          return 1; 
+        else if( isNaN(a)) 
+          return -1;
+        else 
+          return a - b;
+      });
+    
+    let biggest = sorted.slice(-1);
+    let count = 0;
+
+    sorted.forEach((value) => {
+        if (value == biggest){
+            count++;
+        }
+    });
+
+    return console.log(`Biggest number is ${biggest}. There are ${count} count of ${biggest} in the array`);
+};
+
+biggest(arrayNum);
