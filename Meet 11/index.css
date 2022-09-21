@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 50vh;
+    height: 50vh;
+    border : 2em solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text{
+    color: blue;
+    text-align: center;
+}
+
+.smalsify{
+    text-transform: lowercase;
+    color: red;
+}
