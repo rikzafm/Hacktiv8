@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="test-button">test</button>
+    <p id="text-1">show text</p>
+    <p id="text-nama">Panji</p>
+    <p id="text-usia">27</p>
+    <p id="text-domisili">Jakarta</p>
+    <form id="form-nama" onsubmit="handleSubmit(event)">
+        <label for="name">Nama:</label>
+        <input name="nama" id="input-name" value="" />
+        <label for="usia">usia:</label>
+        <input name="usia" id="input-usia" />
+        <label for="domisili">Domisili:</label>
+        <input name="domisili" id="input-domisili" />
+        <button type="submit" id="btn-sbmt">submit</button>
+    </form>
+
+    <script>
+        var textNama = document.getElementById('text-nama');
+        var textUsia = document.getElementById('text-usia');
+        var textDomisili = document.getElementById('text-domisili');
+        var inputNama = document.getElementById('input-name');
+        var inputUsia = document.getElementById('input-usia'); 
+        var inputDomisili = document.getElementById('input-domisili'); 
+
+        var form = document.getElementById('form-nama');
+
+        console.log(textNama.innerText);
+
+        inputNama.value = textNama.innerText;
+        inputUsia.value = textUsia.innerText;
+        inputDomisili.value = textDomisili.innerText;
+
+        function handleSubmit(event) {
+            textNama.innerText = inputNama.value;
+            textUsia.innerText = inputUsia.value;
+            textDomisili.innerText= inputDomisili.value;
+            
+            displayToggle();
+        };
+
+        const buttonTest = document.getElementById('test-button')
+        buttonTest.addEventListener('click', function (){
+            document.getElementById('form-nama').style.display = 'none';
+            displayToggle();
+        })
+
+        const displayToggle = () => {
+            const text1 = document.getElementById('form-nama')
+            let display = text1.style.display;
+            if (display === 'block') {
+                console.log(display, 'display if');
+                text1.style.display = 'none';
+            } else {
+                console.log(display, 'display else');
+                text1.style.display = 'block';
+            }
+            event.preventDefault();
+        }
+
+        function clickMe() {
+            console.log('hey daru click me')
+        }
+    </script>
+</body>
