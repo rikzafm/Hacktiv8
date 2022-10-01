@@ -1,0 +1,31 @@
+kita punya perhitungan luas segitiga sama sisi. akan menerima tinggi dan lebar alas.
+
+DECLARE "height", "base" and "area"
+INPUT "height" then store to "height"
+INPUT "base" then store to "base"
+CALCULATE the area with the formula = height * base / 2
+STORE result in "area"
+DISPLAY "area"
+
+algoritma berat ideal bayi
+
+diberikan sebuah input berupa nama bayi, berat badan, dan tinggi badan. apabila berat bayi lebih dari 10
+kg dan tinggi badan diatas 70cm maka bayi dinyatakan sehat. jika berat badan bayi lebih dari 10 kg dan 
+tinggi bayi kurang dari 70 cm, maka bayi dinyatakan kegemukan. dan apabila bayi berat badannya kurang dari 10 kg
+dan tinggi badannya kurang dari 70 cm, maka bayi dinyatakan tidak sehat. dan apabila berat badan bayi kurang dari 10
+kg dan tinggi lebih dari 70cm, maka bayi dinyatakan kekurusan. output berupa nama bayi dan keterangan kesehatan bayi
+
+DECLARE "name", "height", "weight", "status"
+INPUT name to "name"
+INPUT height to "height"
+INPUT weight to "weight"
+IF "height" greater than 70cm and "weight" greater than 10kg
+    "status" set as Healthy
+ELSE IF "height" is less than 70cm and "weight" greater than 10kg
+    "status" set as Fat
+ELSE IF "height" is less than 70cm and "weight" less than 10kg
+    "status" set as Unhealthy
+ELSE IF "height" is greater than 70cm and "weight" is lesser than 10kg
+    "status" set as Skinny
+
+RETURN "name" and "status"

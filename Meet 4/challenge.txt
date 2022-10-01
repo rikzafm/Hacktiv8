@@ -1,0 +1,9 @@
+Algoritma Luas Keliling Lingkaran
+
+Get Radius as input from user
+Store "radius"
+Calculate Keliling of a circle with formula = 2 * phi * radius
+Store result to "keliling"
+Calculate Luas of a circle with formula = phi * radius * radius
+Store result to "luas"
+Display "luas" and "keliling" 
