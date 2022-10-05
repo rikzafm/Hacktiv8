@@ -27,3 +27,13 @@ let input = [23, 45, 2, 8, 4, 12, 22, 50, 19]
 
 console.log(mergeSort(input));
 
+function factorial(angka) {
+    console.log(angka, 'ini angka');
+    if (angka == 1){
+        return 1;
+    }
+    return angka * factorial (angka-1)
+}
+
+let sum = factorial(4);
+console.log(sum);
